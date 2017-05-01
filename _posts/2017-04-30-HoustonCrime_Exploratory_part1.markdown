@@ -5,9 +5,11 @@ tags: crime
 type: post
 published: true
 status: publish
+image:
+  feature: exploratory_5-1.png
 ---
- 
- ![Intro](/images/figure/exploratory_5-1.png)
+
+
  
 ## Objective
  
