@@ -14,6 +14,7 @@ status: publish
 The objective of this post is to do an exploratory analysis of crime in Houston, Texas. There are many posts/papers out there that visualize similar patterns (See References). I'll use different tools and packages in R like ggplot2 and ggmap. This is my first post of a series about Crime Analysis using R. This series will not only help us to identify the right questions, but to learn what we can do in R following the Epicycle of Analysis. This post will try to define and answer descriptive and exploratory questions. In other words we'll summarize a characteristic of a crime dataset (Socrata) and analyze the data to see if there are patterns, trends, or relationships. In future posts of this series I will define and answer inferential, predictive, causal and mechanistic questions.
  
 ##Pre-requisites
+ 
 Installed the following packages:
  
 devtools::install_github(gm"dkahle/ggmap")
@@ -109,7 +110,7 @@ For this analysis we'll include the top 20 primary incident types, however from 
  
 Note that while we did some data cleansing to ensure data quality, the data set may still contain errors.
  
-##Defining the question
+## Defining the question
  
 Assuming that the data source is correct, I'm very interested in the area I live, for example, Midtown Houston, if I go out with my wife or friends, I'd like to prevent any kind of crime against us, for instance, leaving my car parked in some area, or going out for vacation and leaving my apartment without any kind of alarm system. I'm not a police officer so I'll try to make data-driven decisions. To do this, my objective will be to answer the following questions:
  
@@ -123,7 +124,7 @@ Assuming that the data source is correct, I'm very interested in the area I live
  
 Combining all questions we'd like to answer the likelihood of being affected by crime at a particular area and time
  
-##Exploratory Analysis
+## Exploratory Analysis
  
  
 ### Top 20 Primary Incident Type in Harris County, TX (All Time)
@@ -156,6 +157,7 @@ Combining all questions we'd like to answer the likelihood of being affected by 
     ## 20                                      [RMS] Fraud   9990
  
 ###Midtown data
+ 
 Since we are only interested in crimes which take place midtown, we need to restrict the data set. As stated in Kahle & Wickham's [article](https://journal.r-project.org/archive/2013-1/kahle-wickham.pdf) To determine a bounding box, we use google maps to define the top and bottom boundaries (lats and lons), then we create the map using [qmap from ggmap package](https://cran.r-project.org/web/packages/ggmap/ggmap.pdf)
  
  
@@ -165,7 +167,7 @@ Since we are only interested in crimes which take place midtown, we need to rest
     midtown<-data[-95.402247<=data$longitude & data$longitude<=-95.361392 & 29.725616<=data$latitude & data$latitude<=29.757992,]
 Midtown data contains data from 2009-2017
  
-###All time Midtown data HotSpots using stat_density2d
+### All time Midtown data HotSpots using stat_density2d
  
 The visualization below points out that there are around 4 hotspots of crime activity in Midtown
 
@@ -187,7 +189,7 @@ These 4 hotspots are located in:
 * Sul Ross St and Yupon St          (Reference: University of St. Thomas Area)
 * Cleveland St and Gillete St       (Reference: Carnegie Vanguard High School)
  
-###Midtown crime data points using geom_point()
+### Midtown crime data points using geom_point()
  
 Even though this visualization is not very intuitive, we can identify the density using the real crime incidents by incident type.
  
@@ -203,7 +205,7 @@ Even though this visualization is not very intuitive, we can identify the densit
 
 ![plot of chunk exploratory_5](/images/figure/exploratory_5-1.png)
  
-###All time Midtown hotspots by day of week
+### All time Midtown hotspots by day of week
  
 We can clearly see that the density is higher on Mondays for the heart of midtown area. However, looks like it is more likely to be affected by crime at the Fiesta Mart area on Thursdays. And the St. Thomas University Area is more dangerous on Tuesday. 
  
@@ -228,7 +230,7 @@ To be continued...
 I'll update this post with an exploratory analysis by time of the day, last 2 years, last 5 years and see how these hotspots change. Also, we'll discuss the type of crime within these hotspots by hour, day of the week and month. There are many ways to visualize crime.
  
  
-##References
+## References
  
 There are many resources and posts out there that are vital to understand R and Crime analysis. You can find below all the references used in this post.
  
