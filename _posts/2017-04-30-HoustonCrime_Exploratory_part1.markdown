@@ -6,7 +6,7 @@ type: post
 published: true
 status: publish
 image:
-  feature: exploratory_5-1.png
+  feature: /images/figure/exploratory_5-1.png
 ---
 
 
