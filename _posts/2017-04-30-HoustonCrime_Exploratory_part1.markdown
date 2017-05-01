@@ -10,6 +10,8 @@ image:
 ---
 
 
+![featured](/images/figure/exploratory_5-1.png){:class="img-responsive"}
+
  
 ## Objective
  
