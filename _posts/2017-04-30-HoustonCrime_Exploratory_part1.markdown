@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Houston Crime Descriptive and Exploratory Analysis using R (ggmap)
-output: html_document
-        keep_md: yes
+tags: crime
 type: post
 published: true
 status: publish
