@@ -5,6 +5,7 @@ tags: crime
 type: post
 published: true
 status: publish
+comments: true
 image:
   feature: /images/figure/exploratory_5-1.png
 ---
