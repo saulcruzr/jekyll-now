@@ -5,15 +5,22 @@ tags: crime
 type: post
 published: true
 status: publish
+comments: true
+image:
+  feature: /images/figure/exploratory_5-1.png
 ---
- 
+
+
+![featured](/images/figure/exploratory_5-1.png){:class="img-responsive"}
 
  
 ## Objective
  
 The objective of this post is to do an exploratory analysis of crime in Houston, Texas. There are many posts/papers out there that visualize similar patterns (See References). I'll use different tools and packages in R like ggplot2 and ggmap. This is my first post of a series about Crime Analysis using R. This series will not only help us to identify the right questions, but to learn what we can do in R following the Epicycle of Analysis. This post will try to define and answer descriptive and exploratory questions. In other words we'll summarize a characteristic of a crime dataset (Socrata) and analyze the data to see if there are patterns, trends, or relationships. In future posts of this series I will define and answer inferential, predictive, causal and mechanistic questions.
  
-##Pre-requisites
+
+ 
+## Pre-requisites
  
 Installed the following packages:
  
