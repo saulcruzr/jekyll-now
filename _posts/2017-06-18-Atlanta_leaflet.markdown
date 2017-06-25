@@ -9,7 +9,7 @@ status: publish
 ---
  
 
-June 18 2017
+June 25 2017
 Saul Cruz
  
 ## Objective
@@ -18,7 +18,7 @@ The objective of this post is to do an exploratory analysis of crime in Atlanta,
  
 ## Pre-requisites
  
-install.packages("leaflet")
+install.packages(leaflet)
 library(leaflet)
  
 ## Dataset
@@ -48,12 +48,12 @@ Since we are only interested in crimes which take place in Atlanta, we need to r
     crimeLatLong<-data.frame(lat=atlanta$latitude,lng=atlanta$longitude)
     crimeTitles<-atlanta$incident_type_primary
      
-    crimeLatLong %>% 
-      leaflet() %>%
-      addTiles() %>%
+    crimeLatLong%>% 
+      leaflet()%>%
+      addTiles()%>%
       addMarkers(clusterOptions = markerClusterOptions(), popup = crimeTitles )
 
-    ## Error in loadNamespace(name): there is no package called 'webshot'
+    ## Error in file(con, "rb"): cannot open the connection
  
  
 ##References
