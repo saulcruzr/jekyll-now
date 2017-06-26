@@ -8,6 +8,5 @@ published: true
 status: publish
 ---
  
-Saul Cruz-June 20, 2017
  
-{% include htmlwidgets/2017-06-20-Atlanta_leaflet.html %}
+{% include htmlwidgets/2017-06-18-Atlanta_leaflet.html %}
