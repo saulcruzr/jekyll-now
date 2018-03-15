@@ -9,7 +9,7 @@ name: Yankuik- Data to engineer a better society
 description: A data & analytics, business intelligence, data architecture, story telling with data and big data (etc.) blog
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA3JAAAAJGRmNWQ4ODkzLTgwNjgtNDIxMS05NTQ4LTI0MjM3YWE0Zjc2ZQ.jpg
+avatar: https://media.licdn.com/dms/image/C4D03AQFHSrj68CLojA/profile-displayphoto-shrink_200_200/0?e=1526270400&v=alpha&t=Ijygac59OaauYh4VylMBxAIchPHR0wYZ8Bei4yOhPd8
 
 #
 # Flags below are optional
@@ -19,7 +19,7 @@ future: true
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: saulcruz@yankuik.com
+  email: saulcrobles@gmail.com
   facebook:
   flickr:
   github: saulcruzr
@@ -28,7 +28,7 @@ footer-links:
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: saulcruzr
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: "users/4009376/saul-cruz"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
   comments: true
